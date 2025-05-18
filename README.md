@@ -1,5 +1,5 @@
 # mless
-Notebooks and other stuff for the lecture _Machine learning for the Earth system_ at the University of Cologne, Germany
+Fork of Martin Schultz's repository on _Machine learning for the Earth system_ lecture. 
 
-_Author:_ Martin Schultz, 2025
+Find the solutions to the exercises the the accordingly named directories.
 
