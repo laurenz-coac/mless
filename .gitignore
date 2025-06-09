@@ -169,3 +169,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Model checkpoints and data
+time_series_forecasting/checkpoint/
+time_series_forecasting/content/
+time_series_forecasting/wandb/
