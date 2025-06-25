@@ -176,3 +176,5 @@ time_series_forecasting/content/
 time_series_forecasting/wandb/
 
 *.pkl
+
+timeseries_data
