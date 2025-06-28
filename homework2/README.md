@@ -1,7 +1,7 @@
 *Second homework assignment*
 Based on the notebooks in the time_series_forecasting folder, perform the three following tasks:
 
-1. *Exercise Description* :
+1. *Exercise Description* : Extend the code in notebook 7_multi_model_plotting to read the forecast results from all trained models and plot all curves in one panel. Make sure that your code can be re-used if you make forecasts for other stations or time episodes.
 
 The exercise was to create a plotting function that is able to plot results from different model in a single panel. Since no concrete requirements towards the format of the data/models or the function itself was given, the following assumptions were made:
 
@@ -25,3 +25,11 @@ For the other models, the given data-pickles and trained checkpoints were used t
 *Train LSTM*: The LSTM was chosen to be the model to be trained. To adapt the code to the multi-variable data, since the model was implemented in tensorflow, only the initialization of the model needed to be changed. Apart from that, some data-handling was adapted for more simple and readable code. The model was still trained on only 5 epochs, which did not result in very good results based on the single visualized sample. Over the whole test-dataset, a root mean-squared-error of 0.7 was achieved. 
 
 3. *Exercise Description*: In reality, you will often have forecasts of weather variables (here temperature) available, so you can use future temperature values to forecast the ozone concentrations. Make another copy of your multivariate notebook and adjust the code accordingly. Use your multi-model plotter to compare the results from tasks 2 and 3.
+
+Two different approaches were explored in this exercise. The approaches are explained in depth in the relevant notebook. Both approaches did not require any changes to the architecture or training procedure of the LSTM, instead, only the data-preparation needed to be adapted. 
+
+Note, these two approaches were the only ones (within constraints of time and work) that came to mind. 
+
+Both approaches improve on the RMSE score on the whole test-set from task two, where Approach 1 achieved a score of 0.6740 and Approach two improved on this with a score of 0.6370. This is also clearly visible the in the visualization for a single sample, shown in the notebook for Task 1.
+
+Thus, it seems both approaches were valid and the future temperature data was successfully used by the model to better predict the ozone data.
